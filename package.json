@@ -1,9 +1,10 @@
 {
   "name": "express-polyfill-service",
   "version": "1.0.0",
-  "description": "express module that provides polyfills to client",
+  "description": "express middleware that provides polyfills to client",
   "main": "lib/index.js",
   "scripts": {
+    "prepare": "npm version patch",
     "test": "node test/sample-app"
   },
   "keywords": [
