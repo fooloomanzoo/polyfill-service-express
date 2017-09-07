@@ -1,0 +1,22 @@
+{
+  "name": "express-polyfill-service",
+  "version": "1.0.0",
+  "description": "express module that provides polyfills to client",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/sample-app"
+  },
+  "keywords": [
+    "polyfill",
+    "express",
+    "module"
+  ],
+  "author": "fooloomanzoo",
+  "license": "MIT",
+  "dependencies": {
+    "from2-string": "*",
+    "merge2": "*",
+    "polyfill-service": "*",
+    "pump": "*"
+  }
+}

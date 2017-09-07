@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Polyfill Service Test</title>
+
+  <script src="/polyfill.js?features=String.prototype.startsWith&callback=polyfillsAreLoaded" defer async></script>
+  <script>
+    function polyfillsAreLoaded () {
+      console.log('polyfillsAreLoaded');
+
+      var t, tr, td;
+      //startswith
+      var str = 'To be, or not to be, that is the question.';
+
+      document.querySelector('.string-startswith.header').innerHTML = str;
+      t = document.querySelector('.string-startswith.table');
+
+      tr = document.createElement('tr');
+      td = document.createElement('td');
+      td.innerHTML = '"To be"';
+      tr.appendChild(td)
+      td = document.createElement('td');
+      td.innerHTML = str.startsWith('To be');
+      tr.appendChild(td)
+      t.appendChild(tr);
+
+      tr = document.createElement('tr');
+      td = document.createElement('td');
+      td.innerHTML = '"not to be"';
+      tr.appendChild(td)
+      td = document.createElement('td');
+      td.innerHTML = str.startsWith('not to be');
+      tr.appendChild(td)
+      t.appendChild(tr);
+
+      tr = document.createElement('tr');
+      td = document.createElement('td');
+      td.innerHTML = '"not to be", 10';
+      tr.appendChild(td)
+      td = document.createElement('td');
+      td.innerHTML = str.startsWith('not to be', 10);
+      tr.appendChild(td)
+      t.appendChild(tr);
+    }
+  </script>
+</head>
+
+<body>
+  <h2>Polyfill Service Test</h2>
+
+  <div id="content">
+    <h3>String.prototype.startsWith() (should fail on ie11)</h3>
+    <h4 class="string-startswith header"></h4>
+    <table class="string-startswith table">
+    </table>
+  </div>
+</body>
