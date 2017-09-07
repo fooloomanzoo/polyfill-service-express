@@ -1,5 +1,5 @@
 {
-  "name": "express-polyfill-service",
+  "name": "express-middleware-polyfill-service",
   "version": "1.0.6",
   "description": "express middleware that provides polyfills to client",
   "main": "lib/index.js",

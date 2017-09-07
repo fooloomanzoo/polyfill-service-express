@@ -8,7 +8,7 @@ The usage is simular to polyfill-service, but you define the route you want to r
 ```javascript
   const express = require('express');
   const app = express();
-  const polyfills = require('express-polyfill-service')();
+  const polyfills = require('express-middleware-polyfill-service')();
 
   app.get(/^\/polyfill(\.\w+)(\.\w+)?/, polyfills);
 ```
