@@ -1,6 +1,6 @@
 {
   "name": "express-middleware-polyfill-service",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "express middleware that provides polyfills to client",
   "main": "lib/index.js",
   "scripts": {
@@ -21,7 +21,6 @@
     "polyfill-service": "*",
     "pump": "*"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fooloomanzoo/express-middleware-polyfill-service.git"
