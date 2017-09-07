@@ -1,5 +1,5 @@
 {
-  "name": "express-middleware-polyfill-service",
+  "name": "polyfill-service-express",
   "version": "1.0.9",
   "description": "express middleware that provides polyfills to client",
   "main": "lib/index.js",
@@ -23,9 +23,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fooloomanzoo/express-middleware-polyfill-service.git"
+    "url": "git+https://github.com/fooloomanzoo/polyfill-service-express.git"
   },
   "bugs": {
-    "url": "https://github.com/fooloomanzoo/express-middleware-polyfill-service/issues"
+    "url": "https://github.com/fooloomanzoo/polyfill-service-express/issues"
   }
 }
