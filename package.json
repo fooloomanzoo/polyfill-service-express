@@ -9,6 +9,7 @@
   },
   "keywords": [
     "polyfill",
+    "service",
     "express",
     "module"
   ],
@@ -19,5 +20,13 @@
     "merge2": "*",
     "polyfill-service": "*",
     "pump": "*"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fooloomanzoo/express-middleware-polyfill-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fooloomanzoo/express-middleware-polyfill-service/issues"
   }
 }
